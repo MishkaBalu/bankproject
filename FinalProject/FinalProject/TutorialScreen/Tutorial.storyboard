@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="yfU-Un-6h5">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Navigation Controller-->
+        <scene sceneID="HXI-Vg-fxx">
+            <objects>
+                <navigationController storyboardIdentifier="123" navigationBarHidden="YES" id="yfU-Un-6h5" sceneMemberID="viewController">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="qYL-Gv-CHK">
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="MPu-Sy-hdn" kind="relationship" relationship="rootViewController" id="SZ6-pR-69w"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="DvF-d4-6Rh" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-305" y="-90"/>
+        </scene>
+        <!--Tutorial Main View Controller-->
+        <scene sceneID="dAj-4X-36F">
+            <objects>
+                <viewController id="MPu-Sy-hdn" customClass="TutorialMainViewController" customModule="FinalProject" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="KeM-IJ-W1C">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" alpha="0.34999999999999998" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="business-cash-coins-41295" translatesAutoresizingMaskIntoConstraints="NO" id="aeb-aD-qz6">
+                                <rect key="frame" x="220" y="517" width="225" height="390"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="390" id="Syi-r0-gvg"/>
+                                    <constraint firstAttribute="width" constant="225" id="l8s-2V-Nst"/>
+                                </constraints>
+                            </imageView>
+                            <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleAspectFit" pagingEnabled="YES" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="D5m-2j-bOG">
+                                <rect key="frame" x="0.0" y="20" width="375" height="400"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <collectionViewFlowLayout key="collectionViewLayout" scrollDirection="horizontal" minimumLineSpacing="0.0" minimumInteritemSpacing="0.0" id="ykA-Aa-9pT">
+                                    <size key="itemSize" width="320" height="380"/>
+                                    <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                                    <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                                    <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                </collectionViewFlowLayout>
+                                <cells/>
+                            </collectionView>
+                            <pageControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" numberOfPages="3" translatesAutoresizingMaskIntoConstraints="NO" id="Wbv-nz-sHe">
+                                <rect key="frame" x="168" y="421" width="39" height="37"/>
+                                <color key="pageIndicatorTintColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <color key="currentPageIndicatorTintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </pageControl>
+                            <button opaque="NO" contentMode="scaleToFill" restorationIdentifier="tutor1al" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="NMR-vB-lCg">
+                                <rect key="frame" x="67" y="562" width="240" height="60"/>
+                                <color key="backgroundColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="60" id="Zhh-Qc-FWb"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="25"/>
+                                <state key="normal" title="РОЗПОЧАТИ">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <connections>
+                                    <action selector="nextButtonAction:" destination="MPu-Sy-hdn" eventType="touchUpInside" id="ev6-eX-mDb"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="Wbv-nz-sHe" firstAttribute="top" secondItem="D5m-2j-bOG" secondAttribute="bottom" constant="1" id="2tp-BP-m2d"/>
+                            <constraint firstAttribute="bottom" secondItem="aeb-aD-qz6" secondAttribute="bottom" constant="-240" id="9Rh-sI-HIK"/>
+                            <constraint firstItem="Wbv-nz-sHe" firstAttribute="centerX" secondItem="KeM-IJ-W1C" secondAttribute="centerX" id="9y8-3X-XTv"/>
+                            <constraint firstItem="NMR-vB-lCg" firstAttribute="leading" secondItem="2rS-KU-bC8" secondAttribute="leading" constant="67" id="BdY-Hi-vDO"/>
+                            <constraint firstItem="D5m-2j-bOG" firstAttribute="top" secondItem="2rS-KU-bC8" secondAttribute="top" id="DfT-W3-hYe"/>
+                            <constraint firstItem="2rS-KU-bC8" firstAttribute="trailing" secondItem="NMR-vB-lCg" secondAttribute="trailing" constant="68" id="axv-jU-Hhf"/>
+                            <constraint firstItem="D5m-2j-bOG" firstAttribute="trailing" secondItem="2rS-KU-bC8" secondAttribute="trailing" id="bId-aw-i1B"/>
+                            <constraint firstItem="NMR-vB-lCg" firstAttribute="top" secondItem="Wbv-nz-sHe" secondAttribute="bottom" constant="104" id="c2M-Xo-Cpm">
+                                <variation key="heightClass=compact-widthClass=regular" constant="14"/>
+                            </constraint>
+                            <constraint firstItem="D5m-2j-bOG" firstAttribute="leading" secondItem="2rS-KU-bC8" secondAttribute="leading" id="iAX-yY-eQI"/>
+                            <constraint firstAttribute="trailing" secondItem="aeb-aD-qz6" secondAttribute="trailing" constant="-70" id="jLn-hc-ymK"/>
+                            <constraint firstItem="2rS-KU-bC8" firstAttribute="bottom" secondItem="NMR-vB-lCg" secondAttribute="bottom" constant="45" id="vYM-pz-Cya"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="2rS-KU-bC8"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="yru-fA-4M0"/>
+                    <connections>
+                        <outlet property="button" destination="NMR-vB-lCg" id="oen-kj-cnK"/>
+                        <outlet property="coinBottomConstraint" destination="9Rh-sI-HIK" id="gEY-ju-3qU"/>
+                        <outlet property="collectionView" destination="D5m-2j-bOG" id="R7K-Jk-KgP"/>
+                        <outlet property="pageControl" destination="Wbv-nz-sHe" id="Xbo-XB-RJg"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="VMK-ON-del" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="461.60000000000002" y="-90.404797601199405"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="business-cash-coins-41295" width="1039" height="1559"/>
+    </resources>
+</document>

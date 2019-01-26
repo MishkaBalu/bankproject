@@ -1,0 +1,30 @@
+PODS:
+  - Alamofire (4.8.0)
+  - ObjectMapper (3.4.1)
+  - RHSideButtons (1.1.0)
+  - SDWebImage (4.4.3):
+    - SDWebImage/Core (= 4.4.3)
+  - SDWebImage/Core (4.4.3)
+
+DEPENDENCIES:
+  - Alamofire
+  - ObjectMapper (~> 3.1)
+  - RHSideButtons
+  - SDWebImage
+
+SPEC REPOS:
+  https://github.com/cocoapods/specs.git:
+    - Alamofire
+    - ObjectMapper
+    - RHSideButtons
+    - SDWebImage
+
+SPEC CHECKSUMS:
+  Alamofire: 3ec537f71edc9804815215393ae2b1a8ea33a844
+  ObjectMapper: 5311bd50ca732930959e7ca1a2de43ab823a5ced
+  RHSideButtons: 9de185791d8119bd1160f6dcb88e47b9ad93d192
+  SDWebImage: c5594f1a19c48d526d321e548902b56b479cd508
+
+PODFILE CHECKSUM: dd1a94f776413918a2c36aacdd6a6e4a8bd4a5c6
+
+COCOAPODS: 1.5.3
